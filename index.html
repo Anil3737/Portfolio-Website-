@@ -24,7 +24,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:image" content="https://jadachiranjevianil.netlify.app/your-thumbnail.jpg">
 	<!-- Optional: Add an image -->
-	<link rel="icon" type="image/png" href="images/bg_2.png">
+	<link rel="icon" type="image/png" href="images/icon.jpg">
 	<!-- Google Search Console Verification (Replace 'XYZ...' with your real token from Google) -->
 	<meta name="google-site-verification" content="PBLhzFRon3qMoNNrkIBOzfb800SzX-y3y9LU_edHThk" />
 
@@ -83,23 +83,25 @@
 		}
 
 		.profile-img {
-			width: 180px;
-			/* Reduced from 250px */
-			height: 180px;
-			/* Reduced from 250px */
-			border-radius: 50%;
-			object-fit: cover;
-			border: 4px solid #4A90E2;
-			/* Slightly thinner border */
-			box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			width: 4cap;
+			/* Adjust size as needed */
+			height: 620px;
+			/* border-radius: 50%; */
+			/* Make it circular */
+			/* object-fit: cover; */
+			/* Keep image aspect ratio */
+			/* border: 4px solid #4A90E2; */
+			/* Optional: blue border */
+			/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+			/* Light shadow for subtle depth */
+			display: block;
+			background-color: #fff;
+			/* Fallback color */
+			float: left;
+			/* Align to the left */
+			margin: 20px 30px 20px 60px;
+			/* Top, Right, Bottom, Left */
 		}
-
-		.profile-img:hover {
-			transform: scale(1.05);
-			box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
-		}
-
 
 		/* Animation styles */
 		#typing-animation {
@@ -174,9 +176,11 @@
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#skill-section" class="nav-link"><span>Skills</span></a></li>
 					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
 					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+
 				</ul>
 			</div>
 		</div>
@@ -188,10 +192,11 @@
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
 						data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img profile-img"
-							style="background-image:url(images/bg_2.png);">
-							<div class="overlay"></div>
+						<div class="one-third order-md-last d-flex justify-content-center align-items-center">
+							<img src="images/bg_2_1.jpg" class="profile-img" alt="Profile Image" />
+							<!-- ****  bg_2 ****** -->
 						</div>
+
 						<div class="one-forth d-flex  align-items-center ftco-animate"
 							data-scrollax=" properties: { translateY: '70%' }">
 							<div class="text">
@@ -208,11 +213,13 @@
 
 									// Create an array of typing text
 									const typingTexts = [
-										'Software Engineer  ',
-										'Frontend Developer  ',
-										'Backend Developer  ',
-										'Fullstack Developer  ',
+										'Java Fullstack Developer',
+										'Crafting Scalable Web Applications',
+										'Frontend & Backend Expertise',
+										'Passionate Software Engineer',
+										'Turning Ideas into Code',
 									];
+
 
 									// Create a function to display the typing animation for a given text
 									function playTypingAnimation(text) {
@@ -266,7 +273,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 										<div class="about-img">
-											<img src="images/about_me.jpg" class="img-fluid rounded b-shadow-a" alt="">
+											<img src="images/about.png" class="img-fluid rounded b-shadow-a" alt="">
 										</div>
 									</div>
 									<!-- Details next to profile image -->
@@ -500,15 +507,108 @@
 	</section>
 
 
-	<!-- *********************************Project Section Start*********************************
-	 
-	
-	
-	
-	
-	
-	
-	*************************************Project Section End *********************************** -->
+	<!-- *********************************Project Section Start*********************************-->
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Anil3737" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_1.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://github.com/Anil3737">Digital
+									Restaurant Table Booking System </a></h3>
+							<p> Designed and developed a dynamic web application to enable real-time restaurant table
+								reservations,
+								with user-friendly booking interface and admin panel for managing tables and bookings.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Anil3737" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_2.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://github.com/Anil3737">Data
+									Analysis using Python Project for Beginners</a></h3>
+							<p>Performed exploratory data analysis on diwali sales data using Python to improve the
+								customer experience.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry">
+						<a href="https://github.com/Anil3737" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_3.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://github.com/Anil3737">Power
+									BI Sales dashboard Project for Beginners</a></h3>
+							<p>Designed a power bi dashboard for Madhav Store to track and analyze the online sales data
+								acorss India.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!-- added justify-content-center to center align the last two projects -->
+			<div class="row d-flex justify-content-center">
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Anil3737" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_4.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://github.com/Anil3737">Sales Forecast-
+									Time Series Forecasting</a></h3>
+							<p>Used multiple machine learning models to forecast sales (retail store) and performed time
+								series analysis.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="https://github.com/Anil3737" class="block-20 zoom-effect"
+							style="background-image: url('images/proj_5.jpg');">
+						</a>
+						<div class="text mt-3 float-right d-block">
+
+							<h3 class="heading"><a href="https://github.com/Anil3737">Customer
+									Segmentation using clustering model</a></h3>
+							<p>Developed a ML model to give various recommendations of financial products &amp; services
+								on target customer groups.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="#" class="btn btn-primary py-4 px-5">More Projects</a></p>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+	<!--	*************************************Project Section End *********************************** -->
 
 
 
