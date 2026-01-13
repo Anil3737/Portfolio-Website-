@@ -1,3 +1,2 @@
-#Jada Chiranjevi Anil
-# Java Fullstack Developer
 
+# Jada Chiranjevi Anil 
