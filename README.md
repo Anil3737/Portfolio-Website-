@@ -1,4 +1,4 @@
 
-# Jada Chiranjevi Anil 
+# J Chiranjevi Anil 
 # Java Full Stack Developer 
 # Software Developer 
